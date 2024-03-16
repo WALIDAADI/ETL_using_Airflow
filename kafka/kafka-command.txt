@@ -1,0 +1,23 @@
+#accéder aux kafka contaner
+docker exec -it kafka-kafka-1 /bin/sh
+
+#lister les topics
+kafka-topics.sh --list --zookeeper kafka-zookeeper-1:2181
+
+#supprimer topics
+kafka-topics.sh --zookeeper kafka-zookeeper-1:2181 --delete --topic companies
+
+#créer une topic
+kafka-topics.sh --create --zookeeper kafka-zookeeper-1:2181 --replication-factor 1 --partitions 1 --topic companies
+
+#créer un producer
+kafka-console-producer.sh --broker-list localhost:9092 --topic jobs
+
+#créer un consummer
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic companies --from-beginning
+
+
+
+
+
+
