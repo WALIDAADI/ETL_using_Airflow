@@ -1,7 +1,9 @@
 
 # Pipeline_with_Airflow
 This repository contains a complete data processing pipeline leveraging the power of Apache Airflow for workflow orchestration, Apache Kafka for message streaming, and MongoDB for data storage. The pipeline is designed to scrape web data, process, an itd lot iad into a database for further analysis or visualization.
-<img src="pipline.png" width="600" height="600">
+
+
+<img src="pipline.png" width="900" height="600">
 
 ## Key Features:
 Web Scraping: Automates the extraction of data from major companies from Wikipedia, ensuring the retrieval of the most up-to-date information.
